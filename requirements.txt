@@ -1,2 +1,6 @@
 requests
-pydantic
+pydantic==2.11.5
+google-genai==1.19.0
+fastapi==0.115.8
+pydantic-ai==0.2.12
+PyPDF2==3.0.1
