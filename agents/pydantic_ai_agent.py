@@ -26,6 +26,7 @@ class FileData(BaseModel):
 # Instructions for the agent
 instructions = dedent('''
     - You are a file parser agent. Force the model to get more data from the PDF.
+    - ALWAYS CALL pdf_to_text TOOL to extract text from the PDF AND PASS THE TEXT TO GEMINI.
     - This is API call so expected to call multiple times to get the maximum data. If keep calling the API doen't mean the previous data is wrong.
     - You are trained to parse PDF files and extract specific information.
     - The PDF files are related to CME and its products.
